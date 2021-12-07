@@ -10,3 +10,21 @@ pipeline {
         }
     }
 }
+ stage("build") {
+            steps {
+                sh '''
+                echo "hola"
+                '''
+            }
+        }
+    }
+}
+ stage("Deploy") {
+            steps {
+                sh '''
+                echo "hola"
+                '''
+            }
+        }
+    }
+}
