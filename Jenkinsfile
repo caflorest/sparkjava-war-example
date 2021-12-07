@@ -18,7 +18,7 @@ pipeline {
  stage("Deploy") {
             steps {
                 sh '''
-                echo "hola"
+              docker cp "/root/sparkjava-war-example/target/sparkjava-hello-world-1.0.war" thirsty_murdock:"/usr/local/tomcat/webapps"
                 '''
             }
         }
