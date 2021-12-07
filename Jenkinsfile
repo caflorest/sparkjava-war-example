@@ -8,7 +8,6 @@ pipeline {
                 '''
             }
         }
-    }
  stage("build") {
             steps {
                 sh '''
@@ -16,7 +15,6 @@ pipeline {
                 '''
             }
         }
-    }
  stage("Deploy") {
             steps {
                 sh '''
@@ -25,3 +23,4 @@ pipeline {
             }
         }
     }
+}
